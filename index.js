@@ -1,5 +1,21 @@
 
-/* Non ho ancora finito l'esercizio, lo finirò nel fine settimana.*/
+const totalShoppingCart = parseFloat(prompt('Quanto hai speso?'))
+const costoTotale = totalShoppingCart + sconto
+const sconto = 10
+ 
+
+
+if ( totalShoppingCart >= 50 ){
+  alert ( 'Hai vinto la spedizione gratuita, il costo finale della tua spesa è di: ' + totalShoppingCart + '€')
+} else {
+  alert ('Mi spiace, non hai vinto la spedizione gratuita, il costo totale della spesa è di: ' + costoTotale  + '€')
+}
+
+
+
+
+
+
 
 
 //ESERCIZI SUGLI IF: 
@@ -15,8 +31,10 @@ const number2 = parseInt(prompt('Inserisci il secondo numero: '))
 
 if ( number1 > number2 ) {
   alert ('il numero 1 è maggiore che il numero 2')
-} else {
+} else if (number1 < number2 ) 
   alert('Il numero 2 è maggiore che il numero 1')
+else {
+  alert ('I numeri sono uguali')
 }
 */
 
@@ -68,12 +86,21 @@ switch (true) {
   console.log(i)
 }
 */
-/* Non ho finito l'esercizio ( ieri abbiamo avuto lezione di gruppo e oggi abbiamo visto nuovi argumenti) provo a finire sabato/domenica */
+
 /* ESERCIZIO 4
-  Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
+  Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare se il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA
+
+for (let i = 0; i <= 15; i ++){
+  if (i % 2 === 0) {
+        console.log('Il numero', +i ,'è pari')
+      } else  {
+      console.log('Il numero',  +i , 'è dispari')
+    }
+}
+*/
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
@@ -81,7 +108,32 @@ switch (true) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
+
+- Addizione -> 
+
+const number1 = 3
+const number2 = 5
+
+if ( risultato = number1 + number2 === 8) {
+  console.log(risultato)
+} else {
+  console.log(risultato)
+}
+
+- Sottrazione -> 
+
+const number1 = 8
+const number2 = 16
+
+if ( risultato = number2 / 2 === 9) {
+  console.log(risultato)
+} else {
+  console.log(risultato)
+}
+
+
+*/
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
