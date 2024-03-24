@@ -141,15 +141,16 @@ if ( totalShoppingCart >= 50 ){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA 
-const totalShoppingCart = parseFloat(prompt('Quanto hai speso?'))
+const totalShoppingCart = parseFloat(prompt('Quanto hai speso?')) * 0.8
 const sconto = 10
-const costoTotale = totalShoppingCart - (totalShoppingCart * 0.2)
-
-if (totalShoppingCart >= 50) {
-  alert('Hai vinto la spedizione gratuita, il costo finale della tua spesa è di: ' + costoTotale + '€')
+const costoTotale = totalShoppingCart + sconto
+ 
+if ( totalShoppingCart >= 50 ){
+  alert ('Hai vinto la spedizione gratuita e anche 20% di sconto, il costo finale della tua spesa è di: ' + totalShoppingCart + '€')
 } else {
-  alert('Mi spiace, non hai vinto la spedizione gratuita, il costo totale della spesa è di: ' + (costoTotale + sconto) + '€')
-}*/
+  alert ('Mi spiace, non hai vinto la spedizione gratuita, però hai 20% di sconto. Il costo totale della spesa è di: ' + costoTotale  + '€')
+}
+*/
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
@@ -157,8 +158,26 @@ if (totalShoppingCart >= 50) {
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
+const isMale = false
+const gender = isMale ? "male" : "female"
+
+if(isMale === true){
+  console.log('Il genero è: ' + gender)
+} else {
+  console.log('Il genero è: ' + gender)
+}
+*/
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
+
+
+
+
+
+
+
+
+
