@@ -1,23 +1,4 @@
 
-const totalShoppingCart = parseFloat(prompt('Quanto hai speso?'))
-const costoTotale = totalShoppingCart + sconto
-const sconto = 10
- 
-
-
-if ( totalShoppingCart >= 50 ){
-  alert ( 'Hai vinto la spedizione gratuita, il costo finale della tua spesa è di: ' + totalShoppingCart + '€')
-} else {
-  alert ('Mi spiace, non hai vinto la spedizione gratuita, il costo totale della spesa è di: ' + costoTotale  + '€')
-}
-
-
-
-
-
-
-
-
 //ESERCIZI SUGLI IF: 
 
 /* ESERCIZIO 1
@@ -141,14 +122,34 @@ C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha d
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA
+const totalShoppingCart = parseFloat(prompt('Quanto hai speso?')) 
+const sconto = 10
+const costoTotale = totalShoppingCart + sconto
+ 
+if ( totalShoppingCart >= 50 ){
+  alert ('Hai vinto la spedizione gratuita, il costo finale della tua spesa è di: ' + totalShoppingCart + '€')
+} else {
+  alert ('Mi spiace, non hai vinto la spedizione gratuita, il costo totale della spesa è di: ' + costoTotale  + '€')
+}
+
+*/
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
+const totalShoppingCart = parseFloat(prompt('Quanto hai speso?'))
+const sconto = 10
+const costoTotale = totalShoppingCart - (totalShoppingCart * 0.2)
+
+if (totalShoppingCart >= 50) {
+  alert('Hai vinto la spedizione gratuita, il costo finale della tua spesa è di: ' + costoTotale + '€')
+} else {
+  alert('Mi spiace, non hai vinto la spedizione gratuita, il costo totale della spesa è di: ' + (costoTotale + sconto) + '€')
+}*/
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
